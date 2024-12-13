@@ -57,7 +57,7 @@ onMounted(() => {
   height: .6rem;
 }
 
-.ListWrapper--hasScrollIndicator:hover:after {
+.ListWrapper--hasScrollIndicator:hover::after {
   opacity: 0.1;
 }
 
@@ -146,7 +146,7 @@ onMounted(() => {
   color: #007bff;
 }
 
-.ListItem--isDraggable:focus + .ListItem .Content::before,
+.ListItem--isDraggable:focus + .ListItem .ListContent::before,
 .ListItem--isDraggable:hover + .ListItem .ListContent::before {
   background-color: #007bff;
   opacity: 1;
@@ -301,4 +301,11 @@ onMounted(() => {
 .Pattern--typePlaced {
   background-color: #0042ff;
 }
+
+.Pattern--typeStripes {
+  background-image: repeating-linear-gradient(-45deg, white 0%, white 40%, currentColor 40%, currentColor 50%, white 50%);
+  background-size: 0.8rem 0.8rem;
+}
+
+
 </style>

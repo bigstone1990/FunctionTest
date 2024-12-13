@@ -14,4 +14,8 @@ class DraggableTestController extends Controller
     public function index2() {
         return Inertia::render('DraggableTest/Index2');
     }
+
+    public function dropzone1() {
+        return Inertia::render('DraggableTest/DropZone1');
+    }
 }

@@ -28,6 +28,9 @@ import { Head, Link } from '@inertiajs/vue3';
                             <li>
                                 <Link :href="route('draggabletest.index2')" class="underline text-blue-400">Draggableテスト2</Link>
                             </li>
+                            <li>
+                                <Link :href="route('draggabletest.dropzone1')" class="underline text-blue-400">DropZoneテスト1</Link>
+                            </li>
                         </ul>
                     </div>
                 </div>
