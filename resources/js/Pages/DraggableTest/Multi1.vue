@@ -24,7 +24,16 @@ onMounted(() => {
         mirror: {
             constrainDimensions: true,
         },
-        plugins: [Plugins.ResizeMirror],
+        plugins: [Plugins.ResizeMirror, Plugins.SortAnimation, Plugins.SwapAnimation],
+        sortAnimation: {
+            duration: 200,
+            easingFunction: 'ease-in-out',
+        },
+        swapAnimation: {
+            duration: 200,
+            easingFunction: 'ease-in-out',
+        },
+
     });
 
     const containerTwoCapacity = 3;
