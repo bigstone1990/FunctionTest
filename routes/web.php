@@ -23,6 +23,7 @@ Route::middleware('auth')->group(function () {
     Route::get('/draggabletest/index', [DraggableTestController::class, 'index'])->name('draggabletest.index');
     Route::get('/draggabletest/index2', [DraggableTestController::class, 'index2'])->name('draggabletest.index2');
     Route::get('/draggabletest/dropzone1', [DraggableTestController::class, 'dropzone1'])->name('draggabletest.dropzone1');
+    Route::get('/draggabletest/multi1', [DraggableTestController::class, 'multi1'])->name('draggabletest.multi1');
 });
 
 
