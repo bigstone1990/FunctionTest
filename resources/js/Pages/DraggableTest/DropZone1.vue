@@ -11,6 +11,7 @@ let droppableOrigin = null;
 
 onMounted(() => {
   containers = document.querySelectorAll('#UniqueDropzone .BlockLayout');
+  console.log(containers);
   if (containers.length === 0) {
     return false;
   }
@@ -23,11 +24,15 @@ onMounted(() => {
     },
   });
 
+  console.log(droppable);
+
   droppable.on('drag:start', (evt) => {
+    console.log(evt);
     droppableOrigin = evt.originalSource.parentNode.dataset.dropzone;
   });
 
   droppable.on('droppable:dropped', (evt) => {
+    console.log(evt);
     if (droppableOrigin !== evt.dropzone.dataset.dropzone) {
       evt.cancel();
     }

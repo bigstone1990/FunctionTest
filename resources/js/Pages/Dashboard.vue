@@ -34,6 +34,21 @@ import { Head, Link } from '@inertiajs/vue3';
                             <li>
                                 <Link :href="route('draggabletest.multi1')" class="underline text-blue-400">Multiテスト1</Link>
                             </li>
+                            <li>
+                                <Link :href="route('draggabletest.multi2')" class="underline text-blue-400">Multiテスト2</Link>
+                            </li>
+                            <li>
+                                <Link :href="route('draggabletest.sortablejs1')" class="underline text-blue-400">Sortablejsテスト1</Link>
+                            </li>
+                            <li>
+                                <Link :href="route('draggabletest.mix1')" class="underline text-blue-400">Mixテスト1</Link>
+                            </li>
+                            <li>
+                                <Link :href="route('draggabletest.draggable1')" class="underline text-blue-400">Draggableテスト1</Link>
+                            </li>
+                            <li>
+                                <Link :href="route('draggabletest.sortable1')" class="underline text-blue-400">Sortableテスト1</Link>
+                            </li>
                         </ul>
                     </div>
                 </div>
